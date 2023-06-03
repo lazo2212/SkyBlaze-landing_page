@@ -1,2 +1,47 @@
 @use '../utilities/variables' as *;
 @use '../utilities/mixins' as *;
+
+header {
+  background-image: url('../images/sky-back.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2em;
+
+  .logo-container {
+    height: 50px;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  .links-container {
+    height: 50px;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+
+      li {
+        margin: 0 2em;
+
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  #ballon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
