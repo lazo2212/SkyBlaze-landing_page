@@ -1,2 +1,2 @@
-#ignores upute.txt
-/name/upute.txt
+#ignores ALL txt files
+*.txt
