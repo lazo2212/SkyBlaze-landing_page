@@ -1,13 +1,13 @@
 @use '../utilities/variables' as *;
 @use '../utilities/mixins' as *;
 
-header {
-  background-image: url('../images/sky-back.jpg');
+.header {
+  background-image: url('../images/hero-image.jpg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 80vh;
+  height: 100vh;
   position: relative;
 
   .nav {
@@ -17,32 +17,39 @@ header {
     align-items: center;
     padding: 1em;
     background-color: $primaryColor;
-    opacity: 0.8;
 
     .logo-container {
-      height: 50px;
+      height: 3em;
 
-      img {
+      .logo {
         height: 100%;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+
+        .logo__img {
+          height: 100%;
+        }
+
+        .logo__text {
+          margin-left: 0.5em;
+        }
       }
     }
 
     .links-container {
-      height: 50px;
+      height: 3em;
       display: flex;
       align-items: center;
 
       ul {
         display: flex;
         flex-direction: row;
-        list-style: none;
 
         li {
           margin: 0 2em;
 
           a {
-            text-decoration: none;
-            color: $textColor;
             font-weight: 700;
           }
         }
@@ -51,8 +58,9 @@ header {
   }
 
   h1 {
+    color: $primaryColor;
     font-size: 4rem;
-    text-shadow: 2px 2px 5px black;
+    text-shadow: 5px 5px 2px black;
     position: absolute;
     top: 50%;
     left: 50%;
