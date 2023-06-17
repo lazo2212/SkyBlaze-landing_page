@@ -1,5 +1,6 @@
 @use '../utilities/variables' as *;
 @use '../utilities/mixins' as *;
+@use '../components/button' as *;
 
 .header {
   background-image: url('../images/hero-image.jpg');
@@ -10,6 +11,7 @@
   position: relative;
 
   .nav {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -60,7 +62,7 @@
     }
   }
 
-  h1 {
+  .main-heading {
     color: $primaryColor;
     font-size: 4rem;
     text-shadow: 5px 5px 2px black;
@@ -71,7 +73,8 @@
   }
 }
 
-@media (min-width: 500px) {
-  .logo__text {
+@media (max-width: 550px) {
+  .links-container {
+    visibility: hidden;
   }
 }
