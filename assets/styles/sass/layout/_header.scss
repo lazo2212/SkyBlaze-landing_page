@@ -41,8 +41,6 @@
     right: 0;
     width: 0vw;
     overflow: hidden;
-    transition: width 0.5s ease-in-out;
-    transition-delay: visibility 0.5s;
   }
 
   .nav--visible {
@@ -56,7 +54,6 @@
     align-items: center;
     justify-content: center;
     transition: width 0.5s ease-in-out;
-    transition-delay: visibility 0.5s;
   }
 
   .nav__list {
@@ -91,7 +88,6 @@
   }
 }
 
-// @media from 0 - 550px width
 @include mq-xs {
   .nav-container {
     align-items: center !important;
