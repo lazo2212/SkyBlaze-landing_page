@@ -10,6 +10,10 @@ $backgroundColor: #f5f5f5;
 // Fonts
 $font-family: 'Montserrat', sans-serif;
 
+.wrapper {
+  background-color: $primaryColor;
+  height: 5em;
+}
 .container {
   max-width: 1100px;
   margin: 0 auto;
