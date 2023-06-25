@@ -34,3 +34,29 @@ main {
     }
   }
 }
+
+@include mq-sm {
+  .section__text {
+    padding: 0 !important;
+  }
+
+  .section + .section {
+    margin-top: 2em;
+  }
+
+  .section-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .section:nth-child(odd) {
+    .section-container {
+      flex-direction: row;
+    }
+  }
+
+  .row {
+    width: 47%;
+  }
+}
