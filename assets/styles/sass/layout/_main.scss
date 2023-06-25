@@ -1,0 +1,36 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+main {
+  padding: 1em;
+
+  h2 {
+    padding: 1em 0;
+  }
+
+  .section {
+    h3 {
+      padding-bottom: 1em;
+    }
+
+    .section__image {
+      padding: 0.5em;
+      background-color: $terinaryColor;
+    }
+
+    .section__text {
+      padding: 0.5em 0;
+      line-height: 1.6;
+    }
+
+    .section__link {
+      text-decoration: underline;
+
+      &:hover,
+      &:focus {
+        background-color: $terinaryColor;
+        color: #fff;
+      }
+    }
+  }
+}
