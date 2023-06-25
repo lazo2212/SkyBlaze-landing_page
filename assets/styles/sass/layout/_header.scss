@@ -31,6 +31,7 @@
       &:focus,
       &:hover {
         opacity: 0.75;
+        transition: opacity 1s;
       }
 
       .logo__img {
@@ -89,6 +90,7 @@
     &:focus,
     &:hover {
       opacity: 0.75;
+      transition: opacity 1s;
     }
 
     &:last-child {
@@ -132,6 +134,7 @@
     .nav__list {
       margin: 0;
       flex-direction: row;
+      align-items: center;
 
       .nav__item {
         margin: 0;

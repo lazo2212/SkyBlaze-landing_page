@@ -19,6 +19,7 @@
   a:focus,
   a:hover {
     opacity: 0.75;
+    transition: opacity 1s;
   }
 
   a + a {

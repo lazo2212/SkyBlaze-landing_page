@@ -1,6 +1,9 @@
 @use '../utilities/variables' as *;
 @use '../utilities/mixins' as *;
 
+main {
+  padding: 2em 1em;
+}
 article {
   padding: 2em 0;
 }
