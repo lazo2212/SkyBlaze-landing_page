@@ -122,26 +122,30 @@
 }
 
 @include mq-xs {
-  .nav-container {
-    align-items: center !important;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .nav {
-    visibility: visible !important;
-    width: auto !important;
+  .header {
+    .wrapper {
+      .nav-container {
+        align-items: center;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .nav {
+        visibility: visible;
+        width: auto;
 
-    .nav__list {
-      margin: 0;
-      flex-direction: row;
-      align-items: center;
+        .nav__list {
+          margin: 0;
+          flex-direction: row;
+          align-items: center;
 
-      .nav__item {
-        margin: 0;
-        margin-left: 4em;
+          .nav__item {
+            margin: 0;
+            margin-left: 4em;
 
-        .nav__link {
-          font-size: 1rem;
+            .nav__link {
+              font-size: 1rem;
+            }
+          }
         }
       }
     }

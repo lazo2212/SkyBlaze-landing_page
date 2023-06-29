@@ -46,35 +46,39 @@ main {
 }
 
 @include mq-sm {
-  .section__text {
-    padding: 0 !important;
-  }
+  main {
+    .section {
+      .section__text {
+        padding: 0;
+      }
 
-  .section + .section {
-    margin-top: 2em;
-  }
+      .section-container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
 
-  .section-container {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
+        .section__text:first-child {
+          margin-top: 0;
+        }
 
-    .section__text:first-child {
-      margin-top: 0 !important;
+        .section__text + .section__text {
+          margin-top: 1em;
+        }
+      }
+
+      .row {
+        width: 47%;
+      }
     }
 
-    .section__text + .section__text {
-      margin-top: 1em;
+    .section + .section {
+      margin-top: 4em;
     }
-  }
 
-  .section:nth-child(odd) {
-    .section-container {
-      flex-direction: row;
+    .section:nth-child(odd) {
+      .section-container {
+        flex-direction: row;
+      }
     }
-  }
-
-  .row {
-    width: 47%;
   }
 }
