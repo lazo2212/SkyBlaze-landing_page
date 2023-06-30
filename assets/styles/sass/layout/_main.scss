@@ -43,6 +43,18 @@ main {
       }
     }
   }
+
+  .video-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+
+    video {
+      padding: 1em;
+      background-color: $terinaryColor;
+      width: 100%;
+    }
+  }
 }
 
 @include mq-sm {
