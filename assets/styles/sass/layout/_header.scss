@@ -127,28 +127,26 @@
 }
 
 @include mq-xs {
-  .wrapper {
-    .nav-container {
+  .nav-container {
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .nav {
+    visibility: visible;
+    width: auto;
+
+    .nav__list {
+      margin: 0;
+      flex-direction: row;
       align-items: center;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-    .nav {
-      visibility: visible;
-      width: auto;
 
-      .nav__list {
+      .nav__item {
         margin: 0;
-        flex-direction: row;
-        align-items: center;
+        margin-left: 4em;
 
-        .nav__item {
-          margin: 0;
-          margin-left: 4em;
-
-          .nav__link {
-            font-size: 1rem;
-          }
+        .nav__link {
+          font-size: 1rem;
         }
       }
     }
