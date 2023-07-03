@@ -15,12 +15,10 @@ main {
   }
 
   .section {
+    margin-bottom: 2em;
+
     h3 {
       padding-bottom: 1em;
-    }
-
-    .section-container {
-      margin-bottom: 2em;
     }
 
     .section__image {
@@ -50,7 +48,7 @@ main {
     margin-bottom: 2em;
 
     video {
-      padding: 1em;
+      padding: 0.5em;
       background-color: $terinaryColor;
       width: 100%;
     }
