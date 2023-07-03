@@ -14,12 +14,12 @@ main {
     font-size: 2em;
   }
 
-  .section {
-    margin-bottom: 2em;
+  h3 {
+    padding: 1em 0;
+  }
 
-    h3 {
-      padding-bottom: 1em;
-    }
+  .section {
+    margin-bottom: 4em;
 
     .section__image {
       padding: 0.5em;
@@ -53,6 +53,29 @@ main {
       width: 100%;
     }
   }
+
+  label,
+  input {
+    display: block;
+  }
+
+  input {
+    margin-bottom: 1em;
+    width: 50%;
+    padding: 0.5em;
+  }
+
+  input:last-of-type {
+    margin-top: 1em;
+    background-color: $terinaryColor;
+    border: none;
+    border-radius: 1em;
+    padding: 1em 1.5em;
+    box-shadow: 1px 2px $textColor;
+    width: auto;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
 }
 
 @include mq-sm {
@@ -62,27 +85,23 @@ main {
         padding: 0;
       }
 
+      .section__text:first-child {
+        margin-top: 0;
+      }
+
+      .section__text + .section__text {
+        margin-top: 1em;
+      }
+
       .section-container {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
-
-        .section__text:first-child {
-          margin-top: 0;
-        }
-
-        .section__text + .section__text {
-          margin-top: 1em;
-        }
       }
 
       .row {
         width: 47%;
       }
-    }
-
-    .section + .section {
-      margin-top: 4em;
     }
 
     .section:nth-child(odd) {
