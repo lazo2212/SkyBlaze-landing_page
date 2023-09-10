@@ -59,13 +59,13 @@ main {
     display: block;
   }
 
-  input {
+  input, textarea {
     margin-bottom: 1em;
-    width: 50%;
+    width: 100%;
     padding: 0.5em;
   }
 
-  input:last-of-type {
+  input[type='submit'] {
     margin-top: 1em;
     background-color: $terinaryColor;
     border: none;
@@ -75,6 +75,10 @@ main {
     width: auto;
     font-weight: 600;
     text-transform: uppercase;
+  }
+
+  label {
+    padding: 1em 0;
   }
 }
 
